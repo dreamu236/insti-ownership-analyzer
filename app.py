@@ -18,7 +18,7 @@ with st.sidebar:
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
 # 메인 버튼
 if st.button(f"🚀 {ticker} 데이터 전수 조사 시작"):
